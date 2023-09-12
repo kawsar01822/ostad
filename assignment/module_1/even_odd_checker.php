@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <form action="even_odd_checker.php" method="post" class="col-md-6 offset-md-3" onsubmit="return validateForm();">
-                <h1>Even Odd Checker</h1>
+                <h1 class="text-center">Even Odd Checker</h1>
                 <div class="mb-3">
                     <label for="number" class="form-label">Number to check</label>
                     <input type="number" class="form-control" placeholder="write a number" id="number" name="number">
