@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <form action="comparison_tool.php" method="post" class="col-md-6 offset-md-3" onsubmit="return validateForm();">
-                <h1>Comparison Tool</h1>
+                <h1 class="text-center">Comparison Tool</h1>
                 <div class="row">
                     <div class="mb-3 col">
                         <label for="number1" class="form-label">Number 1</label>
