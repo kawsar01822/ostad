@@ -30,7 +30,7 @@
 
         <script>
             function validateForm(){
-                var temperature = document.querySelector("#temperature").value;
+                var temperature = document.querySelector("#temperature").value.trim();
                 if (temperature == "") {
                     alert("Please write a temparature");
                     document.querySelector("#temperature").focus();
