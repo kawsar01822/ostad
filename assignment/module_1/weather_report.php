@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <form action="weather_report.php" method="post" class="col-md-6 offset-md-3" onsubmit="return validateForm();">
-                <h1>Weather Report</h1>
+                <h1 class="text-center">Weather Report</h1>
                 <div class="mb-3">
                     <label for="temperature" class="form-label">Temperature</label>
                     <input type="number" class="form-control" placeholder="write a temparature" id="temperature" name="temperature">
