@@ -38,17 +38,17 @@
             var test2 = document.querySelector("#test2").value.trim();
             var test3 = document.querySelector("#test3").value.trim();
 
-            if (test1<0 || test1>100){
+            if (!test1 || (test1<0 || test1>100)){
                 alert("Invalid score for First Test");
                 document.querySelector("#test1").focus();
                 return false;
             }
-            else if (test2<0 || test2>100){
+            else if (!test2 || (test2<0 || test2>100)){
                 alert("Invalid score for Second Test");
                 document.querySelector("#test2").focus();
                 return false;
             }
-            else if (test3<0 || test3>100){
+            else if (!test3 || (test3<0 || test3>100)){
                 alert("Invalid score for Third Test");
                 document.querySelector("#test3").focus();
                 return false;
