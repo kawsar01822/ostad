@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <form action="grade_calcuator.php" method="post" class="col-md-6 offset-md-3" onsubmit="return validateForm();">
-            <h1>Grade Calculator</h1>
+            <h1 class="text-center">Grade Calculator</h1>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="test1">First Test </label>
                 <input type="number" class="form-control" id="test1" name="test1" placeholder="score out of 100">
