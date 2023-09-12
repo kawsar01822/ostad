@@ -69,5 +69,5 @@
             $res = "<b>$temperature</b> Fahrenheit is equal to <b>$celsius</b> Celsius";
         }
 
-        echo "<br/><h4 class='text-center'>$res</h4>";
+        echo "<br/><div class='alert alert-primary text-center col-md-6 offset-md-3' role='alert'><h4>$res</h4></div>";
     }
