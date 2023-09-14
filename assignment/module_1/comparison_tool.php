@@ -67,7 +67,7 @@
     {
         $number1 = $_POST['number1'];
         $number2 = $_POST['number2'];
-        $res = $number1>$number2?"$number1 is greater than $number2":"$number2 is greater than $number1";
+        $res = $number1>$number2?"$number1 is the largest number":"$number2 is the largest number";
 
         echo "<br/><div class='alert alert-primary text-center col-md-4 offset-md-4' role='alert'><h4>$res</h4></div>";
     }
