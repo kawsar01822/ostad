@@ -8,7 +8,7 @@ function generatePassword($length = 12)
     $lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
     $uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $numericChars = '0123456789';
-    $specialChars = '(!@#$%^&*()_+).';
+    $specialChars = '!@#$%^&*()_+.';
 
     $allChars = $lowercaseChars . $uppercaseChars . $numericChars . $specialChars;
 
@@ -18,8 +18,7 @@ function generatePassword($length = 12)
     
     // Generate random characters for the password
     for ($i = 0; $i < $length; $i++) {
-        $randomChar = $allChars[rand(0, $charsLen - 1)];
-        $password .= $randomChar;
+        $password .= $allChars[rand(0, $charsLen - 1)];
     }
 
     return $password;
@@ -29,4 +28,4 @@ function generatePassword($length = 12)
 $password = generatePassword(12);
 
 // Print the generated password
-echo "Generated Password:\n$password \n";
+echo "Generated Password:\n$password\n";
