@@ -14,9 +14,11 @@ function generatePassword($length = 12)
 
     $password = '';
 
+    $charsLen = strlen($allChars);
+    
     // Generate random characters for the password
     for ($i = 0; $i < $length; $i++) {
-        $randomChar = $allChars[rand(0, strlen($allChars) - 1)];
+        $randomChar = $allChars[rand(0, $charsLen - 1)];
         $password .= $randomChar;
     }
 
