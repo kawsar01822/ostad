@@ -1,19 +1,13 @@
 <?php
 
-// Task 2: Array Manipulation
+    $numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    
+    function removeEvenNumber($numbers){
 
-$numbers = range(1, 10);
+        return array_filter($numbers, function($values){
+            return $values % 2 != 0;
+        });
 
-function removeEven($n)
-{
-    return $n % 2 != 0;
-}
+    }
 
-// function isEven($n)
-// {
-//     return $n % 2 == 0;
-// }
-
-$result = array_filter($numbers, 'removeEven'); // 1, 3, 5, 7, 9
-
-print_r($result);
+    print_r(removeEvenNumber($numbers));
