@@ -18,3 +18,13 @@ function sortDesc($number1, $number2)
 usort($grades, 'sortDesc');  // callback function
 
 print_r($grades);
+
+
+// echo PHP_EOL;
+
+// function sortGrades(array $grades){
+//     rsort($grades);         // Sorting grades in descending order
+//     print_r($grades);
+// }
+
+// sortGrades($grades);
