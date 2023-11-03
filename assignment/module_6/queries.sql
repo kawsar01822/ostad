@@ -126,4 +126,4 @@ GROUP BY p.category_id ORDER BY revenue DESC;
 SELECT c.name AS customer_name,SUM(o.total_amount) AS purchase_amount
 FROM customers c
 INNER JOIN orders o ON o.customer_id = c.id
-GROUP BY o.customer_id ORDER BY purchase_amount DESC;
+GROUP BY o.customer_id ORDER BY purchase_amount DESC LIMIT 5;
